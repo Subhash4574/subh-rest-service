@@ -18,7 +18,7 @@ pipeline {
 
          stage('run') {
              steps {
-                 bat 'java -jar target/subh-rest-service-0.0.1-SNAPSHOT.jar'
+                 bat 'nohup ./mvnw spring-boot:run -Dserver.port=8001'
              }
          }
 
