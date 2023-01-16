@@ -16,5 +16,11 @@ pipeline {
             }
          }
 
+         stage('run') {
+             steps {
+                 bat 'java -jar target/subh-rest-service-0.0.1-SNAPSHOT.jar'
+             }
+         }
+
     }
 }
